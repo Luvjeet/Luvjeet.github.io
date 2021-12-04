@@ -950,6 +950,10 @@ img {
     .project__img {
         width: 200px;
     }
+    .footer__container {
+        justify-content: center;
+        text-align: center;
+    }
 }
 
 /* For medium devices */
