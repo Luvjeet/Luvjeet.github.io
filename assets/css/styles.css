@@ -865,6 +865,10 @@ img {
 .footer__social {
     color: #fff;
 }
+.footer__container {
+    justify-content: center;
+    text-align: center;
+}
 
 /*========== SCROLL UP ==========*/
 .scrollup {
@@ -949,10 +953,6 @@ img {
     }
     .project__img {
         width: 200px;
-    }
-    .footer__container {
-        justify-content: center;
-        text-align: center;
     }
 }
 
