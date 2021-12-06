@@ -1200,4 +1200,7 @@ img {
     .contact__inputs {
         grid-template-columns: repeat(2, 1fr);
     }
+    .portfolio__img {
+        width: 1200px;
+    }
 }
