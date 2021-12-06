@@ -175,7 +175,7 @@ if (selectedTheme) {
     document.body.classList[selectedTheme === "dark" ? "add" : "remove"](
         darkTheme
     );
-    themeButton.classList[selectedIcon === "uil-moon" ? "add" : "remove"](
+    themeButton.classList[selectedIcon === "uil-sun" ? "add" : "remove"](
         iconTheme
     );
 }
@@ -189,3 +189,7 @@ themeButton.addEventListener("click", () => {
     localStorage.setItem("selected-theme", getCurrentTheme());
     localStorage.setItem("selected-icon", getCurrentIcon());
 });
+
+function changeColor(color) {
+    document.documentElement.style.setProperty("--hue-color", `${color}`);
+}
