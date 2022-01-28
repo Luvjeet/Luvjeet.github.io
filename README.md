@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # Responsive Portfolio Website Luvjeet
 
 ### Responsive Portfolio Website Alexa
