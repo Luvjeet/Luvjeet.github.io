@@ -338,6 +338,36 @@ img {
     transition: 0.3s;
 }
 
+.small-screen-display {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.big-screen-arrow {
+    display: none;
+}
+
+.home__forward-button  {
+    color: var(--first-color);
+    transition: 0.3s;
+    animation: upwardAnim 1.5s alternate-reverse infinite;
+}
+
+@keyframes forwardAnim {
+    from {transform: translateX(-0.5em);}
+    to {transform:translateX(0);}
+}
+
+@keyframes upwardAnim{
+    from {transform: translateY(0.5em);}
+    to {transform:translateX(0);}
+}
+
+/*.home__forward-button:hover {
+    transform: translateX(-0.25rem) ;
+    cursor: pointer;
+}*/
+
 .home__scroll-button:hover {
     transform: translateY(0.25rem);
 }
@@ -364,6 +394,13 @@ img {
     margin-right: 0.3rem;
     cursor: pointer;
 }
+.pallete-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5em 0 0 0;
+    flex-direction: column-reverse;
+}
 .pallete-themes {
     display: flex;
     flex-wrap: wrap;
@@ -379,6 +416,13 @@ img {
 }
 .c4 {
     background-color: hsl(62, 69%, 61%);
+}
+
+.c1,
+.c2,
+.c3,
+.c4 {
+    border-radius: .2rem;
 }
 /*==================== BUTTONS ====================*/
 .button {
@@ -429,7 +473,7 @@ img {
 }
 /*==================== ABOUT ====================*/
 .about__img {
-    width: 200px;
+    width: 220px;
     border-radius: 0.5rem;
     justify-self: center;
     align-self: center;
@@ -1164,6 +1208,19 @@ img {
     }
     .footer__copy {
         margin-top: 4.5rem;
+    }
+    .pallete-container {
+        flex-direction: row;
+    }
+    .small-screen-arrow{
+        display: none;
+    }
+    .big-screen-arrow {
+        display: block;
+    }
+    .small-screen-display {
+        flex-direction: row;
+        animation: forwardAnim 1.5s infinite alternate-reverse;
     }
 }
 
