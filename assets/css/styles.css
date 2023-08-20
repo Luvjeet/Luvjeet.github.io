@@ -510,6 +510,13 @@ img {
     display: flex;
     justify-content: center;
 }
+
+.about__button__container {
+    display: flex;
+    flex-direction: column;
+    gap:2rem;
+}
+
 /*==================== SKILLS ====================*/
 .skills__container {
     row-gap: 0rem;
@@ -957,6 +964,7 @@ img {
     border-radius: 0.5rem;
     z-index: var(--z-tooltip);
     transition: 0.4s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .scrollup:hover {
@@ -1069,6 +1077,9 @@ img {
     }
     .project__container {
         padding-bottom: 2rem;
+    }
+    .about__button__container {
+        flex-direction: row;
     }
 }
 
@@ -1222,6 +1233,9 @@ img {
         flex-direction: row;
         animation: forwardAnim 1.5s infinite alternate-reverse;
     }
+    .about__button__container {
+        flex-direction: row;
+    }
 }
 
 /* For large devices */
@@ -1263,5 +1277,8 @@ img {
     }
     .portfolio__img {
         width: 1200px;
+    }
+    .about__button__container {
+        flex-direction: row;
     }
 }
